@@ -40,11 +40,11 @@ def plotPCAandSplit(data_all):
         
     df_data_all = pd.Series(data_all[:,:,0].flatten())
     ts_log = np.log(df_data_all)
-    print(ts_log.isna().sum())
+    #print(ts_log.isna().sum())
     diff = ts_log - ts_log.shift(24)
-    print(diff.isna().sum())
-    print(np.argwhere(np.isinf(diff)))
-    print(np.argwhere(np.isinf(diff.dropna().drop(22405).drop(22429).drop(22404))))
+    #print(diff.isna().sum())
+    #print(np.argwhere(np.isinf(diff)))
+    #print(np.argwhere(np.isinf(diff.dropna().drop(22405).drop(22429).drop(22404))))
     diff_drop = np.array(diff[27768:])
     
     # Plot PDF (histogram)
