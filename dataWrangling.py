@@ -8,8 +8,6 @@ Created on Fri Jul 12 10:49:16 2019
 
 import pandas as pd
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
 
 def csvToArray(filename):
     # %% Load data
