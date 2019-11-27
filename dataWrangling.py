@@ -10,6 +10,15 @@ import pandas as pd
 import numpy as np
 
 def csvToArray(filename):
+    """Summary or Description of the Function
+
+    Parameters:
+    filenam (str): the name of input file (with csv extention)
+
+    Returns:
+    data (array): returning arrays after wrangling to 133 elements
+
+    """
     # %% Load data
     df = pd.read_csv('DayMarked.csv')
     
