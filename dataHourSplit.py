@@ -26,5 +26,3 @@ def splitToDifferentTimeSpan(daySpan, dayType):
     else:
         # if it is Sunday, split to 4 timespans 0h - 4h, 5h - 6h, 7h - 15h and 16h - 23h
         return daySpan[:,:5,:], daySpan[:,5:7,:], daySpan[:,7:16,:], daySpan[:,16:,:]
-    
-    
