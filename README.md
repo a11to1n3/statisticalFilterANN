@@ -8,3 +8,5 @@ The reasons of using Google Colab are (1) it is free of charge, (2) it does not 
 2. Upload this included notebook to your working repository by clicking File - Upload notebook
 3. Change runtime: in order to use free GPU on google colab, please go to Runtime - Change runtime type - set Hardware accelerator to GPU
 4. Go through the following sections step by step to achieve the results in the paper.
+
+**Tips:** Press Shift + Enter to run each code block!
