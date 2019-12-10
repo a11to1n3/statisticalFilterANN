@@ -121,9 +121,9 @@ def plotPCAandSplit(data_all):
     
     
     # Plot PCA
-    plt.scatter(mon[:,0],mon[:,1],'o',label="Change from Sundays to Mondays")
-    plt.scatter(sun[:,0],sun[:,1],'v',label="Change from Saturdays to Sundays")
-    plt.scatter(rests[:,0],rests[:,1],'s',label="The rests")
+    plt.scatter(mon[:,0],mon[:,1],marker='o',label="Change from Sundays to Mondays")
+    plt.scatter(sun[:,0],sun[:,1],marker='v',label="Change from Saturdays to Sundays")
+    plt.scatter(rests[:,0],rests[:,1],marker='s',label="The rests")
     plt.xlabel("PC1")
     plt.ylabel("PC2")
     plt.title("Principal Components Analysis")
