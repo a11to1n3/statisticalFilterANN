@@ -153,7 +153,7 @@ def csvToArray(filename):
             data[i,21,a] = 1
             data[i,22,a] = 1
             data[i,23,a] = 1
-        if len(int(df.values[i,1])) > 7:
+        if len(df.values[i,1]) > 7:
             b = int(df.values[i,1][-5:-3])+31
         else:
             b = int(df.values[i,1][-4:-3])+31
