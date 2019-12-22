@@ -203,7 +203,10 @@ def csvToArray(filename):
         data[i,21,c] = 1
         data[i,22,c] = 1
         data[i,23,c] = 1
-        d = int(df.values[i,1][-8:-6])+115
+        if len(df.values[i,1]) > 7:
+            d = int(df.values[i,1][-8:-6])+115
+        else:
+            d = int(df.values[i,1][-7:-6])+115
         data[i,0,d] = 1
         data[i,1,d] = 1
         data[i,2,d] = 1
